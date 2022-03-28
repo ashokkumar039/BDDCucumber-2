@@ -49,7 +49,7 @@ public class LoginPage {
 
 	@Given("Open chrome and start application {string}")
 	public void open_chrome_and_start_application(String url2) {
-		System.setProperty("webdriver.chrome.driver", "D:\\Selenium-Java-Automation\\BDDCucumber-2\\BrowserDriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./BrowserDriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
